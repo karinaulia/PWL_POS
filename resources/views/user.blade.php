@@ -12,7 +12,7 @@
                 <th>Nama</th>
                 <th>ID Level Pengguna</th>
                 <th>Kode Level</th>
-                <th>Nama Lebel</th>
+                <th>Nama Level</th>
                 <th>Aksi</th>
             </tr>
             @foreach ($data as $d)

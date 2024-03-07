@@ -10,8 +10,8 @@ class LevelModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'm_user';
-    protected $primaryKey = 'user_id';
+    protected $table = 'm_level';
+    protected $primaryKey = 'level_id';
 
     public function user(): BelongsTo
     {
