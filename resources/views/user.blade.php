@@ -5,8 +5,14 @@
     </head>
     <body>
         <h1>Data User</h1>
-        <table border="1" cellpading="2" cellspacing="0">
+        <table border="1">
             <tr>
+                <th>Jumlah Pengguna</th>
+            </tr>
+            <tr>
+                <td>{{$data}}</td>
+            </tr>
+            {{-- <tr>
                 <th>ID</th>
                 <th>Username</th>
                 <th>Nama</th>
@@ -19,7 +25,7 @@
                 <td>{{$data->nama}}</td>
                 <td>{{$data->level_id}}</td>
             </tr>
-            @endforeach
+            @endforeach --}}
         </table>
     </body>
 </html>
