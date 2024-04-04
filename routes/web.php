@@ -62,14 +62,13 @@ Route::group(['prefix' => 'barang'], function() {
     Route::delete('/{id}', [BarangController::class, 'destroy']);
 });
 
-Route::get('/user', [UserController::class, 'index']);
-
-Route::get('/user/tambah', [UserController::class, 'tambah']);
-
-Route::post('/user/tambah_simpan', [UserController::class, 'tambah_simpan']);
-
-Route::get('/user/ubah/{id}', [UserController::class, 'ubah']);
-
-Route::put('/user/ubah_simpan/{id}', [UserController::class, 'ubah_simpan']);
-
-Route::get('/user/hapus/{id}', [UserController::class, 'hapus']);
+Route::group(['prefix' => 'kategori'], function() {
+    Route::get('/', [KategoriController::class, 'index']);
+    Route::post('/list', [KategoriController::class, 'list']);
+    Route::get('/create', [KategoriController::class, 'create']);
+    Route::post('/', [KategoriController::class, 'store']);
+    Route::get('/{id}', [KategoriController::class, 'show']);
+    Route::get('/{id}/edit', [KategoriController::class, 'edit']);
+    Route::put('/{id}', [KategoriController::class, 'update']);
+    Route::delete('/{id}', [KategoriController::class, 'destroy']);
+});
