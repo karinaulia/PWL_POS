@@ -92,7 +92,7 @@ class LevelController extends Controller
             'list' => ['Home', 'Level', 'Detail']
         ];
 
-        $page = (object) [
+        $page = (object)[
             'title' => 'Detail level'
         ];
 
