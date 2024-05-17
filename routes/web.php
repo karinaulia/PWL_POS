@@ -115,9 +115,3 @@ Route::group(['middleware' => ['auth']], function() {
         Route::resource('manager', ManagerController::class);
     });
 });
-
-Route::get('level', [LevelController::class, 'index']);
-Route::post('levels', [LevelController::class, 'store']);
-Route::get('levels/{level}', [LevelController::class, 'show']);
-Route::put('levels/{level}', [LevelController::class, 'update']);
-Route::delete('levels/{level}', [LevelController::class, 'destroy']);
